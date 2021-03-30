@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <script src="https://kit.fontawesome.com/7a546950c0.js" crossorigin="anonymous"></script>
     <title>CodePlat: Online Code Compiler</title>
-    
+    <link rel="icon" href="assest/logo.png">
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="./style.css">
     
@@ -14,15 +14,18 @@
     <script src="./script.js" defer></script>
   </head>  
   <body>
-    <input type="text" placeholder="Search Code Plat" name="search">
-    <button>Login</button>
-    <div class="name">
-      CODEPLAT
+    <div class="search-and-login">
+      <i class="fas fa-search"></i>
+      <input type="text" placeholder="Search CodePlat ..." name="search" class="searchbox">
+      <a href="" class="login-button">Login</a>
+    </div>
+    <div class="page-title">
+      <h1>CODEPLAT</h1>
     </div>
     <div class="code-preview">
       <div class="html">
         <header>
-          <h1>HTML</h1>
+          <h3>HTML</h3>
         </header>
         <div class="html-content">
           <code>
@@ -36,7 +39,7 @@
       </div>
       <div class="css">
         <header>
-          <h1>CSS</h1>
+          <h3>CSS</h3>
         </header>
         <div class="css-content">
           <code>
@@ -62,13 +65,13 @@
       </div>
       <div class="js">
         <header>
-          <h1>JS</h1>
+          <h3>JS</h3>
         </header>
         <code>
           <p>
             <span class="keyword">var</span>
             <span class="identifier"> colors </span>
-            <span>=[</span>
+            <span>= [</span>
             <span class="text">"#74B087"</span>
             <span>,</span>
             <span class="text">"#DE7300"</span>
@@ -84,17 +87,20 @@
         </code>
       </div>
     </div>
-    <h1 class="description">The website for building, testing, and sharing your code.</h1>
+    <h1 class="description">The website for building, testing and sharing your code.</h1>
     <p class="detailed-description">CodePlat is a platform for developer to design, compile and share your work with people around the world.</p>
-    <div class="editor">
-      <h2>Compile your code</h2>
-      <p>Try out our online code editor compatible with many types of programming languages</p>
-      <a href="editor.html" class="button">Try the editor</a>
-    </div>
-    <div class="share">
-      <h2>Share your work</h2>
-      <p>Share your works to the community and explore others. Discover and insprire yourself and others on the way. </p>
-      <a href="comunity.html"></a>
+    <div class="function">
+      <div class="editor">
+        <h2>Compile your code</h2>
+        <p>Try out our online code editor compatible with <br> many types of programming languages</p>
+        <a href="editor.html" class="button">Try the editor</a>
+      </div>
+      <div class="share">
+        <h2>Share your work</h2>
+        <p>Share your works to the community and explore others. <br> 
+          Discover, insprire yourself and making friends on the way. </p>
+        <a href="community.html" class="button">Explore The Community</a>
+      </div>
     </div>
   </body>
 </html>
