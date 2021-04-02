@@ -8,13 +8,18 @@
 
 }
 
+.title{
+  font-size: larger;
+}
 .login-button{
   padding: 10px;
   background-color: grey;
   border-radius: 10px;
+  width: 20%;
 }
 .search-and-login{
   text-align: center;
+  width: 100%;
 }
 .page-title{
   text-align: center;
@@ -71,13 +76,14 @@ body{
   display: inline-block;
   text-align: left;
   background-color: #2C303B;
-  padding-bottom: 30px;
+  padding-bottom: 25px;
   padding-left: 20px ;
   padding-right: 20px;
   margin: 10px;
   border-radius: 10px;
   
 }
+
 .button{
   padding: 10px;
   background-color: #43D174;

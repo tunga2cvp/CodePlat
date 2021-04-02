@@ -1,0 +1,127 @@
+.editor{
+    border: 1px solid black;
+    display: inline-block;
+    background-color: grey;
+    border-radius: 10px;
+}
+textarea{
+    background-color: #141430;
+    color: white;
+}
+.content{
+  border: 2px solid;
+  padding: 20px; 
+  resize: horizontal;
+  word-wrap: break-word;
+}
+.editor-container{
+    max-width: 99%;
+    text-align: center;
+    resize: vertical;
+}
+
+#c-editor, #python-editor, #java-editor{
+    display: none;
+} 
+
+.output{
+    border: 1px solid black;
+    height: 200px;   
+    text-align: center;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}
+#name{
+    display: inline-block;
+}
+.selector{
+    display: inline;
+    float: right;
+    margin-top: 18px;
+}
+#saveBtn{
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+    padding: 10px;
+    background-color: #43D174;
+    border-radius: 10px;
+}
+select{
+    font-size:large;
+    margin: 5px;
+    border-radius: 10PX;
+}
+/* Reset Select */
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background: #2c3e50;
+    background-image: none;
+  }
+  /* Custom Select */
+  .select {
+    position: relative;
+    display: flex;
+    width: 20em;
+    height: 3em;
+    line-height: 3;
+    background: #2c3e50;
+    overflow: hidden;
+    border-radius: .25em;
+  }
+  select {
+    flex: 1;
+    padding: 5px;
+    color: #fff;
+    cursor: pointer;
+  }
+  /* Arrow */
+  .select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background: #34495e;
+    cursor: pointer;
+    pointer-events: none;
+    -webkit-transition: .25s all ease;
+    -o-transition: .25s all ease;
+    transition: .25s all ease;
+  }
+  /* Transition */
+  .select:hover::after {
+    color: #f39c12;
+  }
+  
+body{
+    background-color: #020524;
+    color: white;
+  }
+  header{
+    position: relative;
+  }
+input{
+    background-color: #020524;
+    color: white;
+    margin-left: 5px;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size: larger;
+
+}
+.title{
+    padding: 10px;
+}
+image{
+    width: 15%;
+}

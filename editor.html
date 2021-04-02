@@ -1,1 +1,73 @@
-<h1> hehe </h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor</title>
+    <link rel="stylesheet" href="./editor.css">
+    <link rel="icon" href="assest/logo.png">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="./assest/logo.png" alt="CodePlat" style="width: 5%;"></a>
+        <input type="text" name="projectName" value="Untitled" >
+        <button type="button" class="button" id="saveBtn">Save</button>
+
+    <div class="selector">
+        <select name="languages" onchange = "myFunction()" id="language-selector">
+            <!-- <div class="optGroup"> -->
+            <option value="Web Development">Web Development</option>
+            <option value="C">C</option>
+            <option value="Python">Python</option>
+            <option value="Java">Java</option>
+        </select>
+        
+    </div>
+    </header>
+    <div class="editor-container">
+        <div class="editor" id="html-editor">
+            <header>
+                <div class="title">HTML</div>
+            </header>
+                <textarea class="content" name="html" id="html" cols="50" rows="20" spellcheck="false"></textarea>
+        </div>
+        <div class="editor" id="css-editor">
+            <header>
+                <div class="title">CSS</div>
+            </header>
+                <textarea name="css" class="content" id="css" cols="50" rows="20" spellcheck="false"></textarea>
+        </div>
+        <div class="editor" id="js-editor">
+            <header>
+                <div class="title">JS</div>
+            </header>
+                <textarea name="js" class="content" id="js" cols="50" rows="20" spellcheck="false"></textarea>
+        </div>
+        <div class="editor" id="c-editor">
+            <header>
+                <div class="title">C</div>
+            </header>
+                <textarea name="c" class="content" id="c" cols="170" rows="20" spellcheck="false"></textarea>
+        </div>
+        <div class="editor" id="python-editor">
+            <header>
+                <div class="title">Python</div>
+            </header>
+                <textarea name="pyton" class="content" id="python" cols="170" rows="20" spellcheck="false"></textarea>
+        </div>
+        <div class="editor" id="java-editor">
+            <header>
+                <div class="title">Java</div>
+            </header>
+                <textarea name="java" class="content" id="java" cols="170" rows="20" spellcheck="false"></textarea>
+        </div>
+    </div>
+
+    <div class="output">
+        This is where the result of the compiled code will be !
+    </div>
+
+</body>
+</html>
