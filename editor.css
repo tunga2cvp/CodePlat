@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
 .editor{
     border: 1px solid black;
     display: inline-block;
@@ -42,9 +44,12 @@ textarea{
 }
 #saveBtn{
     float: right;
-    margin-top: 20px;
+    margin-top: 23px;
     margin-right: 20px;
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
     background-color: #43D174;
     border-radius: 10px;
 }
@@ -104,6 +109,7 @@ select {
 body{
     background-color: #020524;
     color: white;
+    font-family: 'Open Sans',sans-serif;
   }
   header{
     position: relative;

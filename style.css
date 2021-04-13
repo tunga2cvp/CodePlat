@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
 .searchbox{
   width: 80%;
   height: 20px;
@@ -21,10 +23,18 @@
   text-align: center;
   width: 100%;
 }
+
 .page-title{
   text-align: center;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: larger;
+  font-weight: 800;
+  font-family: "Telefon Black", Sans-Serif;
+  -webkit-font-smoothing: antialiased; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Telefon Black", Sans-Serif;
+  font-size: 1.5rem;
 }
 /* img{
   text-align: center;
@@ -59,6 +69,7 @@
 body{
   background-color: #020524;
   color: white;
+  font-family: 'Open Sans',sans-serif;
 }
 .attribute, .keyword{
   color:#b07c41;
@@ -71,6 +82,9 @@ body{
 }
 .description, .detailed-description{
   text-align: center;
+}
+.detailed-description{
+  font-style: italic;
 }
 .editor, .share{
   display: inline-block;
