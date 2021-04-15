@@ -13,7 +13,7 @@
 .title{
   font-size: larger;
 }
-.login-button{
+#login-button{
   padding: 10px;
   background-color: grey;
   border-radius: 10px;
@@ -49,14 +49,19 @@
   text-align: center;
 }
 .html, .css, .js {
-  border: 1px solid black;
+  border: 1px solid black transparent;
   padding: 10px;
   display: inline-block;
   text-align: left;
   background-color: #05071c;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin: 5px;
+  border-radius: 10px;
 }
+.html:hover, .css:hover, .js:hover{
+  transform: scale(1.2,1.2);
+  transition: transform 0.4s ease-in-out;
+} 
 .tag, .selector{
   color: #999226;
 }
@@ -66,10 +71,22 @@
 .text{
   color: #4ab571;
 }
-body{
+/* body{
   background-color: #020524;
   color: white;
   font-family: 'Open Sans',sans-serif;
+} */
+body {
+  background: linear-gradient(132deg, #020524, #0f2f3b);
+  background-size: 400% 400%;
+  animation: BackgroundGradient 30s ease infinite;
+  color: white;
+  font-family: 'Open Sans',sans-serif;
+}
+@keyframes BackgroundGradient {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
 }
 .attribute, .keyword{
   color:#b07c41;
@@ -102,6 +119,13 @@ body{
   padding: 10px;
   background-color: #43D174;
   border-radius: 10px;
+}
+.button:hover{
+  border: 1px solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #427388; 
 }
 a:visited{
   color:white;
