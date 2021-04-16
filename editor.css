@@ -25,10 +25,15 @@ textarea{
 #c-editor, #python-editor, #java-editor{
     display: none;
 } 
-
+html,body { 
+  height:100%;
+  display: flex;
+  flex-direction: column; 
+}
 .output{
     border: 1px solid black;
-    height: 200px;   
+    /* min-height: 50%;    */
+    flex-grow: 1;
     text-align: center;
     background-color: white;
     color: black;
