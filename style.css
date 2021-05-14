@@ -77,7 +77,7 @@
   font-family: 'Open Sans',sans-serif;
 } */
 body {
-  background: linear-gradient(132deg, #020524, #0f2f3b);
+  background: linear-gradient(132deg, #1220bb, #16d8615b);
   background-size: 400% 400%;
   animation: BackgroundGradient 30s ease infinite;
   color: white;

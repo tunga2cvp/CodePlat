@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <!-- import the webpage's stylesheet -->
+        <link rel="stylesheet" href="./admin.css">
+    
+        <!-- import the webpage's javascript file -->
+        <script src="./script.js" type="text/javascript"></script>
+</head>
+<body>
+        <div id="mySidenav" class="sidenav">
+            <div id="user" >
+                <img src="./assest/profile.jpg" alt="" id="profile-pic">
+                <div id="user-name">username</div>
+            </div>
+            <div id="search-box" class="sidenav-element">
+                <input type="text">
+            </div>
+            <div class="sidenav-element">
+                <div>
+                    <a href="#" class="catergory" onclick="showDashboard()">Dashboard</a> 
+                </div>
+            </div>
+            <div id="file-manager" class="sidenav-element">
+                    <span>
+                        <a href="#" class="catergory" id="file-manager" onclick="fileManagerBtnHandler()">File Manager</a>
+                    </span>
+                    <ul id="file-manager-dropdown">
+                        <li><a href="#" class="sub-category" onclick="showPostManager()">Post Manager</a></li>
+                        <li><a href="#" class="sub-category" onclick="showExcerciseManager()">Excercise Manager</a></li>
+                    </ul>
+            </div>
+            <div id="account-manager" class="sidenav-element">
+                <span><a href="#" class="catergory">Account Manager</a></span>
+            </div>
+        </div>
+    
+    <div id="content-wrapper">
+        <div class="navbar">
+            <span id="nav-controller" style="font-size:25px;cursor:pointer" onclick="navController()">&#9776;</span>
+            <a class="navbar-element" href="#" onclick="showDashboard()">Home</a>
+            <a class="navbar-element" href="#">Contact</a>
+        </div>
+        
+        <div id="dashboard">
+            <header id="dashboard-header">Dashboard</header>
+            <div class="flex-container">
+                <div id="user-info" class="info-box">
+                    <header>User</header>
+                    <div class="content">
+                        <div id="user-number" class="content-element">
+                            <span> User Number: </span>
+                            <span id="user-number"> 420 </span>
+                        </div>
+                        <div id="online-user" class="content-element">
+                            <span> Online Users: </span>
+                            <span id="online-user-value"> 69 </span>
+                        </div>
+                        <div id="new-user" class="content-element">
+                            <span>New User Today: </span>
+                            <span id="new-user-value"> 4 </span>
+                        </div>
+                    </div>
+                </div>
+                <div id="excercise-info" class="info-box">
+                    <header>Excercise</header>
+                    <div class="content">
+                        <div id="excercise-number" class="content-element">
+                            <span> Excercise Number: </span>
+                            <span id="excersie-number-value"> 420 </span>
+                        </div>
+                        <div id="new-excercise" class="content-element">
+                            <span>New Excercise Today: </span>
+                            <span id="new-excercise-value"> 2 </span>
+                        </div>
+                    </div>
+                </div>
+                <div id="post-info" class="info-box">
+                    <header>
+                        Post
+                    </header>
+                    <div class="content">
+                        <div id="post-number">
+                            <span> Post Number: </span>
+                            <span id="post-number-value"> 420 </span>
+                        </div>
+                        <div id="new-post" class="content-element">
+                            <span>New Post Today: </span>
+                            <span id="new-post-value"> 12
+                                 </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="post-manager">
+            <header id="header">Post Manager</header>
+            <div id="content">
+                <header>
+                    <h3>Post Data Table</h3>
+                    <div id="search-box"><input type="text" name="table_search" placeholder="Search"></div>
+                </header>
+                <table>
+                    <thead>
+                        <td>ID</td>
+                        <td>Title</td>
+                        <td>Creator</td>
+                        <td>Date</td>
+                        <td>Action</td>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Home Page Pure CSS</td>
+                            <td>tungnt</td>
+                            <td>12/5/2021</td>
+                            <td class="Action">
+                                <button id="update">Update</button>
+                                <button id="delete">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Admin Page Pure CSS</td>
+                            <td>tungnt</td>
+                            <td>12/5/2021</td>
+                            <td class="Action">
+                                <button id="update">Update</button>
+                                <button id="delete">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Admin Page Pure CSS</td>
+                            <td>tungnt</td>
+                            <td>12/5/2021</td>
+                            <td class="Action">
+                                <button id="update">Update</button>
+                                <button id="delete">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Admin Page Pure CSS</td>
+                            <td>tungnt</td>
+                            <td>12/5/2021</td>
+                            <td class="Action">
+                                <button id="update">Update</button>
+                                <button id="delete">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Admin Page Pure CSS</td>
+                            <td>tungnt</td>
+                            <td>12/5/2021</td>
+                            <td class="Action">
+                                <button id="update">Update</button>
+                                <button id="delete">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Admin Page Pure CSS</td>
+                            <td>tungnt</td>
+                            <td>12/5/2021</td>
+                            <td class="Action">
+                                <button id="update">Update</button>
+                                <button id="delete">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Admin Page Pure CSS</td>
+                            <td>tungnt</td>
+                            <td>12/5/2021</td>
+                            <td class="Action">
+                                <button id="update">Update</button>
+                                <button id="delete">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Admin Page Pure CSS</td>
+                            <td>tungnt</td>
+                            <td>12/5/2021</td>
+                            <td class="Action">
+                                <button id="update">Update</button>
+                                <button id="delete">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Admin Page Pure CSS</td>
+                            <td>tungnt</td>
+                            <td>12/5/2021</td>
+                            <td class="Action">
+                                <button id="update">Update</button>
+                                <button id="delete">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Admin Page Pure CSS</td>
+                            <td>tungnt</td>
+                            <td>12/5/2021</td>
+                            <td class="Action">
+                                <button id="update">Update</button>
+                                <button id="delete">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <footer id="table-footer">
+                    <ul class="pagination">
+                        <li class="page-item"><a href="#">«</a></li>
+                        <li class="page-item"><a href="#">1</a></li>
+                        <li class="page-item"><a href="#">2</a></li>
+                        <li class="page-item"><a href="#">3</a></li>
+                        <li class="page-item"><a href="#">4</a></li>
+                        <li class="page-item"><a href="#">5</a></li>
+                        <li class="page-item"><a href="#">»</a></li>
+                    </ul>
+                </footer>
+            </div>
+
+            <div class="post-editing">
+                
+            </div>
+        </div>
+
+        <div id="excercise-manager">
+            <header id="header">Excercise Manager</header>
+            <div id="content">
+                <header>
+                    <h3>Excercise Data Table</h3>
+                    <div id="search-box"><input type="text" name="table_search" placeholder="Search"></div>
+                </header>
+                <table>
+                    <thead>
+                        <td>ID</td>
+                        <td>Title</td>
+                        <td>Creator</td>
+                        <td>Date</td>
+                        <td>Action</td>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Home Page Pure CSS</td>
+                            <td>tungnt</td>
+                            <td>12/5/2021</td>
+                            <td class="Action">
+                                <button id="update">Update</button>
+                                <button id="delete">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Admin Page Pure CSS</td>
+                            <td>tungnt</td>
+                            <td>12/5/2021</td>
+                            <td class="Action">
+                                <button id="update">Update</button>
+                                <button id="delete">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Admin Page Pure CSS</td>
+                            <td>tungnt</td>
+                            <td>12/5/2021</td>
+                            <td class="Action">
+                                <button id="update">Update</button>
+                                <button id="delete">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Admin Page Pure CSS</td>
+                            <td>tungnt</td>
+                            <td>12/5/2021</td>
+                            <td class="Action">
+                                <button id="update">Update</button>
+                                <button id="delete">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Admin Page Pure CSS</td>
+                            <td>tungnt</td>
+                            <td>12/5/2021</td>
+                            <td class="Action">
+                                <button id="update">Update</button>
+                                <button id="delete">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Admin Page Pure CSS</td>
+                            <td>tungnt</td>
+                            <td>12/5/2021</td>
+                            <td class="Action">
+                                <button id="update">Update</button>
+                                <button id="delete">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Admin Page Pure CSS</td>
+                            <td>tungnt</td>
+                            <td>12/5/2021</td>
+                            <td class="Action">
+                                <button id="update">Update</button>
+                                <button id="delete">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Admin Page Pure CSS</td>
+                            <td>tungnt</td>
+                            <td>12/5/2021</td>
+                            <td class="Action">
+                                <button id="update">Update</button>
+                                <button id="delete">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Admin Page Pure CSS</td>
+                            <td>tungnt</td>
+                            <td>12/5/2021</td>
+                            <td class="Action">
+                                <button id="update">Update</button>
+                                <button id="delete">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Admin Page Pure CSS</td>
+                            <td>tungnt</td>
+                            <td>12/5/2021</td>
+                            <td class="Action">
+                                <button id="update">Update</button>
+                                <button id="delete">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <footer id="table-footer">
+                    <ul class="pagination">
+                        <li class="page-item"><a href="#">«</a></li>
+                        <li class="page-item"><a href="#">1</a></li>
+                        <li class="page-item"><a href="#">2</a></li>
+                        <li class="page-item"><a href="#">3</a></li>
+                        <li class="page-item"><a href="#">4</a></li>
+                        <li class="page-item"><a href="#">5</a></li>
+                        <li class="page-item"><a href="#">»</a></li>
+                    </ul>
+                </footer>
+            </div>
+        </div>
+    </div>
+      
+</body>
+</html>
